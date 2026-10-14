@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elite Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Elite Academy</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We'd Love to Hear From You</p>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Address</h3>
+                    <p>123 Education Street</p>
+                    <p>Learning City, LC 12345</p>
+                    <p>Country Name</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3>Phone</h3>
+                    <p><strong>Main:</strong>+256791411565</p>
+                    <p><strong>Admission:</strong> +256791411565</p>
+                    <p><strong>Office Hours:</strong> Mon-Fri, 9AM-5PM</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">✉️</div>
+                    <h3>Email</h3>
+                    <p><strong>General:</strong> info@eliteacademy.edu</p>
+                    <p><strong>Admission:</strong> admission@eliteacademy.edu</p>
+                    <p><strong>Support:</strong> support@eliteacademy.edu</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">🕒</div>
+                    <h3>Office Hours</h3>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+                    <p><strong>Sunday & Holidays:</strong> Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Send us a Message</h2>
+            <div class="form-wrapper">
+                <form id="contactForm" onsubmit="submitContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="contactPhone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="Admission Inquiry">Admission Inquiry</option>
+                            <option value="Fee Related">Fee Related</option>
+                            <option value="Academic">Academic</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please enter your message..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attachment">Attachment (Optional)</label>
+                        <input type="file" id="attachment" name="attachment">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+                <div id="contactMessage" class="form-message" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.8889753369467!2d-74.00628!3d40.71281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ0LjEiTiA3NMKwMDAnMDUuOCJX!5e0!3m2!1sen!2sus!4v1234567890" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="departments">
+        <div class="container">
+            <h2>Departments & Contact Persons</h2>
+            <div class="departments-grid">
+                <div class="dept-card">
+                    <h3>Admission Department</h3>
+                    <p><strong>Head:</strong> Mr. David Parker</p>
+                    <p><strong>Email:</strong> admission@eliteacademy.edu</p>
+                    <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+                    <p><strong>Hours:</strong> Mon-Sat, 9AM-4PM</p>
+                </div>
+                <div class="dept-card">
+                    <h3>Academic Department</h3>
+                    <p><strong>Head:</strong> Dr. Elizabeth Green</p>
+                    <p><strong>Email:</strong> academics@eliteacademy.edu</p>
+                    <p><strong>Phone:</strong> +1 (555) 345-6789</p>
+                    <p><strong>Hours:</strong> Mon-Fri, 9AM-3PM</p>
+                </div>
+                <div class="dept-card">
+                    <h3>Finance Department</h3>
+                    <p><strong>Head:</strong> Mr. Michael Brown</p>
+                    <p><strong>Email:</strong> finance@eliteacademy.edu</p>
+                    <p><strong>Phone:</strong> +1 (555) 456-7890</p>
+                    <p><strong>Hours:</strong> Mon-Fri, 9AM-2PM</p>
+                </div>
+                <div class="dept-card">
+                    <h3>Student Affairs</h3>
+                    <p><strong>Head:</strong> Ms. Jessica Martinez</p>
+                    <p><strong>Email:</strong> studentaffairs@eliteacademy.edu</p>
+                    <p><strong>Phone:</strong> +1 (555) 567-8901</p>
+                    <p><strong>Hours:</strong> Mon-Fri, 10AM-4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>What are the school timings? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>School operates from 8:00 AM to 3:30 PM on weekdays. Assembly starts at 8:15 AM. Details vary by class and are mentioned in admission documents.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I reach the school administration? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>You can contact us via phone at +1 (555) 123-4567, email at info@eliteacademy.edu, or visit our office during business hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there parking available? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Yes, we have ample parking facilities for staff and visitors. A separate secure parking area is provided for students' vehicles.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I schedule a campus tour? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Contact our admission department at +1 (555) 234-5678 or admission@eliteacademy.edu to schedule a campus visit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>What is the best way to contact the Principal? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>For important matters, contact our office and request an appointment with the Principal. We typically accommodate meetings within 3-5 working days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Elite Academy is committed to providing quality education that transforms lives and shapes future leaders.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Education Street, Learning City, LC 12345</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ info@eliteacademy.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

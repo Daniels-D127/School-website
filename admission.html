@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Elite Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Elite Academy</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html" class="active">Admission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Admission Portal</h1>
+        <p>Begin Your Journey with Elite Academy</p>
+    </section>
+
+    <!-- Admission Info -->
+    <section class="admission-info">
+        <div class="container">
+            <h2>Admission Information</h2>
+            <div class="admission-grid">
+                <div class="info-card">
+                    <h3>📋 Eligibility Criteria</h3>
+                    <ul>
+                        <li>Class I: Age 5+ years</li>
+                        <li>Class VI: Class V pass or equivalent</li>
+                        <li>Class IX: Class VIII pass or equivalent</li>
+                        <li>Class XI: Class X pass with relevant stream</li>
+                        <li>No age bar for transfers</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📅 Important Dates</h3>
+                    <ul>
+                        <li><strong>Registration:</strong> January - March</li>
+                        <li><strong>Entrance Test:</strong> April - May</li>
+                        <li><strong>Interview:</strong> May - June</li>
+                        <li><strong>Admission Decision:</strong> June - July</li>
+                        <li><strong>Session Starts:</strong> July</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📄 Required Documents</h3>
+                    <ul>
+                        <li>Birth Certificate</li>
+                        <li>Previous School Report Card</li>
+                        <li>Transfer Certificate</li>
+                        <li>Character Certificate</li>
+                        <li>Medical Certificate</li>
+                        <li>Photographs (2x2 & 1x1)</li>
+                        <li>ID Proof</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>💰 Fee Structure</h3>
+                    <ul>
+                        <li><strong>Primary (I-V):</strong> ₹50,000 - 70,000/year</li>
+                        <li><strong>Middle (VI-VIII):</strong> ₹60,000 - 80,000/year</li>
+                        <li><strong>High School (IX-X):</strong> ₹70,000 - 90,000/year</li>
+                        <li><strong>Senior (XI-XII):</strong> ₹80,000 - 1,00,000/year</li>
+                        <li>Scholarships available for meritorious students</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Registration</h3>
+                    <p>Fill the online registration form with basic information</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Application Submission</h3>
+                    <p>Complete application with all required documents</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Entrance Test</h3>
+                    <p>Appear for entrance examination in relevant subjects</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Interview</h3>
+                    <p>Personal interview with admission panel</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Admission Letter</h3>
+                    <p>Receive admission confirmation and enrollment details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Registration Complete</h3>
+                    <p>Submit final documents and complete fee payment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Admission Form -->
+    <section class="admission-form-section">
+        <div class="container">
+            <h2>Online Admission Form</h2>
+            <div class="form-container">
+                <form id="admissionForm" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardianName">Parent/Guardian Name *</label>
+                        <input type="text" id="guardianName" name="guardianName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardianPhone">Parent/Guardian Phone *</label>
+                        <input type="tel" id="guardianPhone" name="guardianPhone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="currentClass">Class Applying For *</label>
+                        <select id="currentClass" name="currentClass" required>
+                            <option value="">Select a class</option>
+                            <option value="Class 1">Class 1</option>
+                            <option value="Class 6">Class 6</option>
+                            <option value="Class 9">Class 9</option>
+                            <option value="Class 11">Class 11 - Science</option>
+                            <option value="Class 11 Commerce">Class 11 - Commerce</option>
+                            <option value="Class 11 Humanities">Class 11 - Humanities</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="previousSchool">Previous School Name *</label>
+                        <input type="text" id="previousSchool" name="previousSchool" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="marks">Previous Year Marks (%) *</label>
+                        <input type="number" id="marks" name="marks" min="0" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode">Pincode *</label>
+                        <input type="text" id="pincode" name="pincode" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us anything about yourself..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Submit Application</button>
+                </form>
+                <div id="formMessage" class="form-message" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Information -->
+    <section class="scholarships">
+        <div class="container">
+            <h2>Scholarship Programs</h2>
+            <div class="scholarship-grid">
+                <div class="scholarship-card">
+                    <h3>🏆 Merit Scholarship</h3>
+                    <p><strong>Up to 50% tuition fee waiver</strong></p>
+                    <p>For students who score above 90% in entrance examination</p>
+                </div>
+                <div class="scholarship-card">
+                    <h3>👨‍👩‍👧‍👦 Family Scholarship</h3>
+                    <p><strong>10-15% discount</strong></p>
+                    <p>For siblings studying in the school</p>
+                </div>
+                <div class="scholarship-card">
+                    <h3>💰 Financial Aid</h3>
+                    <p><strong>Based on eligibility</strong></p>
+                    <p>For economically disadvantaged but talented students</p>
+                </div>
+                <div class="scholarship-card">
+                    <h3>🎯 Sports Scholarship</h3>
+                    <p><strong>Up to 25% fee waiver</strong></p>
+                    <p>For students with exceptional sports talent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>When does admission process start? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Admission process typically starts in January and continues through June. Early registration is recommended for better class options.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there an entrance examination? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Yes, entrance examinations are conducted for Class 6 onwards. For Class 1, admission is based on interaction and basic readiness assessment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>What about merit scholarships? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>We offer merit scholarships based on entrance test performance and academic records. Up to 50% fee waiver is available for top performers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>Can transfer students apply? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Yes, students from other schools can apply for admission. Transfer certificates and previous academic records are required.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h4>What is the fee payment schedule? <span class="toggle">+</span></h4>
+                    <div class="faq-answer">
+                        <p>Fees can be paid annually, semi-annually, or quarterly. Installment plans are available for families needing financial support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <p>Contact our admission team for more information</p>
+            <div class="contact-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='contact.html'">Contact Us</button>
+                <button class="btn btn-secondary" onclick="window.open('tel:+15551234567')">Call +1 (555) 123-4567</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Elite Academy is committed to providing quality education that transforms lives and shapes future leaders.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Education Street, Learning City, LC 12345</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ info@eliteacademy.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
